@@ -22,17 +22,17 @@ export const Header: React.FC<HeaderProps> = ({ isHovered, setActiveTab }) => {
 
       <ul className="header__socials">
         <li>
-          <a href="#">
+          <a href="https://github.com/KMarnat" target="_blank">
             <Github />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/kasparmarnat/" target="_blank">
             <Linkedin />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/kmarnat/" target="_blank">
             <Instagram />
           </a>
         </li>
