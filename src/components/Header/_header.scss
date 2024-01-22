@@ -1,0 +1,41 @@
+/* Header styles
+----------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  padding: 3rem;
+
+  @media #{$breakpoint-mobile-portrait} {
+    padding: 2rem;
+  }
+
+  a {
+    height: fit-content;
+  }
+
+  &__logo {
+    height: 3rem;
+    display: block;
+    transition: all 0.25s ease-in-out;
+    transform-origin: center;
+
+    &:hover {
+      transform: scale(1.15);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.25rem;
+
+    svg {
+      transition: all 0.25s ease-in-out;
+      transform-origin: center;
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+/* Main styles
+---------------------------------- */
+:root {
+  --grad-1: rgb(22, 111, 253);
+  --grad-2: rgb(107, 28, 82);
+  // --grad-1: rgb(202, 30, 30);
+  // --grad-2: rgb(80, 224, 36);
+}
+
+body {
+  background-color: #202020;
+  color: #e0e0e0;
+  animation: fadeInAnimation ease 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/*-----------------------------------------------*/
+
+/* Content */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/*-----------------------------------------------*/
+
+/* Animations
+------------------ */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+/*-----------------------------------------------*/
+
+/* Gradient stuff 
+------------------------------------*/
+.gradient1 {
+  stop-color: var(--grad-1);
+  transition: all 0.3s ease-in-out;
+}
+
+.gradient2 {
+  stop-color: var(--grad-2);
+  transition: all 0.3s ease-in-out;
+}
+
+.hover .gradient1 {
+  stop-color: var(--grad-2);
+}
+
+.hover .gradient2 {
+  stop-color: var(--grad-1);
+}
+/*-----------------------------------------------*/
+
+/* Global media query variables
+--------------------------------*/
+// Very small devices (portrait phones, 320px and down)
+$breakpoint-mobile-xs: "(max-width: 20em)";
+
+// Small devices (portrait phones, 428px and down)
+$breakpoint-mobile-portrait: "(max-width: 26.75em)";
+
+// Small devices (landscape phones, 576px and down)
+$breakpoint-mobile-landscape: "(max-width: 36em)";
+
+// Medium devices (portrait tablets, 768px and down)
+$breakpoint-tablet-portrait: "(max-width: 48em)";
+
+// Medium devices (landscape tablets, 1024px and down)
+$breakpoint-tablet-landscape: "(max-width: 63.99em)";
+
+// Large devices (desktops, 992px and down)
+$breakpoint-large: "(max-width: 62em)";
+
+// Extra large devices (desktops, 1200px and down)
+$breakpoint-xlarge: "(max-width: 74.99em)";
+
+// Extra large devices (large desktops, 1400px and down)
+$breakpoint-xxlarge: "(max-width: 87.5em)";

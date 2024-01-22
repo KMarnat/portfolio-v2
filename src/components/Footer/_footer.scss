@@ -1,0 +1,18 @@
+/* Footer styles
+------------------ */
+.footer {
+  padding: 3rem;
+  align-self: flex-end;
+  position: relative;
+
+  @media #{$breakpoint-mobile-portrait} {
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  p {
+    line-height: normal;
+    margin: 0;
+  }
+}

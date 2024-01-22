@@ -1,0 +1,61 @@
+/* ProjectTab component
+------------------------- */
+.project-tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  &__title {
+    @media #{$breakpoint-large} {
+      font-size: 3rem;
+    }
+  }
+
+  &__description {
+    position: relative;
+    padding-left: 2rem;
+    margin: 1.5rem 0;
+    transition: all 0.3s ease-in-out;
+
+    &:after {
+      content: "";
+      width: 2px;
+      background: linear-gradient(0deg, var(--grad-2) 0%, var(--grad-1) 100%);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+    }
+
+    p:last-of-type {
+      margin: 0;
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+
+    a {
+      font-size: 1rem;
+      font-weight: 500;
+      // color: ;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s ease;
+      border-bottom: 2px solid;
+      border-image-source: linear-gradient(to right, var(--grad-1), var(--grad-2));
+      border-image-slice: 1;
+      border-image-repeat: round;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: white;
+        border-image-source: linear-gradient(to right, var(--grad-2), var(--grad-1));
+      }
+    }
+  }
+}

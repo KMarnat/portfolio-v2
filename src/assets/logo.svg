@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132.02 78.16" fill="white">
+  <defs>
+    <style>
+      <!-- @font-face {
+        font-family: 'Solustion Demo';
+        src: url('C:\Users\Kaspar\AppData\Local\Microsoft\Windows\Fonts\Solustion Demo.otf');
+        font-size: 48px;
+      } -->
+      .cls-1 {
+        font-family: SolustionDemo, 'Solustion Demo'; 
+        font-size: 48px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(0 55.22)"><tspan x="0" y="0">K</tspan></text>
+  <text class="cls-1" transform="translate(53.93 41.13)"><tspan x="0" y="0">M</tspan></text>
+</svg>

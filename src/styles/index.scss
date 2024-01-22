@@ -1,0 +1,12 @@
+@import "./reset";
+@import "./typography";
+@import "./app";
+// Pages
+@import "../pages/mainpage";
+
+// Components
+@import "../components/Header/header";
+@import "../components/MainContent/maincontent";
+@import "../components/Footer/footer";
+@import "../components/ProjectsList/projectslist";
+@import "../components/ProjectTab/projecttab";
