@@ -1,6 +1,6 @@
 /// <reference types="vite-plugin-svgr/client" />
 
-import Logo from "../../assets/logo.svg?react";
+import Logo from "../../assets/logo2.svg?react";
 import Github from "../../assets/github.svg?react";
 import Instagram from "../../assets/instagram.svg?react";
 import Linkedin from "../../assets/linkedin.svg?react";

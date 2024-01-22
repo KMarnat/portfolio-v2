@@ -5,10 +5,10 @@
   justify-content: space-between;
   position: relative;
   width: 100%;
-  padding: 3rem;
+  padding: 2rem 3rem 3rem;
 
   @media #{$breakpoint-mobile-portrait} {
-    padding: 2rem;
+    padding: 1rem 2rem 2rem;
   }
 
   a {
@@ -16,7 +16,7 @@
   }
 
   &__logo {
-    height: 3rem;
+    height: 5rem;
     display: block;
     transition: all 0.25s ease-in-out;
     transform-origin: center;
@@ -28,7 +28,12 @@
 
   &__socials {
     display: flex;
+    margin-top: 1rem;
     gap: 1.25rem;
+
+    @media #{$breakpoint-mobile-portrait} {
+      gap: 0.75rem;
+    }
 
     svg {
       transition: all 0.25s ease-in-out;
